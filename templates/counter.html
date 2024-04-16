@@ -1,0 +1,9 @@
+{% load static %}
+
+<link rel= "stylesheet" href = "{% static 'style.css' %}">
+
+<h1>Data Received. Number of words are {{num_words}}</h1>
+
+{% for post in posts %}
+<h1><a href = "{% url 'post' post%}">Post</a></h1>
+{% endfor %}
